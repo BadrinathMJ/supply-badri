@@ -1,0 +1,22 @@
+data_ingestion:
+  raw_data_folder: '../././data/raw'
+  interim_data_folder: '../././data/interim'
+
+data_preprocessing:
+  preprocessed_folder: '../././data/preprocessed'
+
+feature_engineering:
+  processed_folder: '../././data/processed'
+
+model_building:
+  test_weeks: 12
+
+models:
+  prophet: '../././models/global/prophet_model.pkl'
+  arima:   '../././models/global/arima_model.pkl'
+  xgb:     '../././models/global/xgb_model.json'
+  
+ensemble:
+  prophet_w: 0.2
+  arima_w : 0.2
+  xgb_w: 0.6
